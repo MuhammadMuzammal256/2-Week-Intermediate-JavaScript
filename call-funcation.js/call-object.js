@@ -18,7 +18,6 @@ let display = function (state,country) {
     console.log(this.name);
     console.log(this.age);
     console.log(this.email);
-        console.log(this.blood);
     console.log(state);
     console.log(country);
 };
