@@ -23,7 +23,7 @@ let a = 10;
 console.log(a);
 
 function hello(abc = "yaar"){
- 
+      var x = 3434
     console.log(abc)
     console.log(x)
 }
@@ -67,3 +67,4 @@ counter(); // 1
 counter(); // 2
 counter(); // 3
 
+hello();
