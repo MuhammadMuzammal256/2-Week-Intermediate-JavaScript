@@ -6,6 +6,7 @@ let nameArray = ['Ali','Ahmed','Hassan','Hamza','Bilal','Usman','Zain','Fahad','
 let numberArray1 = [1, 2, 3, 4, 5];
 let numberArray2 = [6, 7, 8, 9, 10];
 
+
 function printName() {
   let newNameArray = nameArray.map(function(x) {
     return x;
@@ -106,4 +107,5 @@ return [a,b];
 }
 console.log(newAdd(45,5));
 }
+
 
