@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="showData"></div>
+
+<script>
+function showSavedData() {
+  let saveData = document.querySelector(".showData");
+
+  let savedName = localStorage.getItem("Name");
+  let savedEmail = localStorage.getItem("Email");
+  let savedPassword = localStorage.getItem("Password");
+  let savedAge = localStorage.getItem("Age");
+  let savedComment = localStorage.getItem("Comment");
+  let savedCheck = localStorage.getItem("Check");
+
+  if(saveData) {
+    if(savedName && savedEmail && savedPassword && savedAge && savedComment) {
+      saveData.innerHTML = `
+        <h3>My Saved Data</h3>
+        <p>Name: ${savedName}</p>
+        <p>Email: ${savedEmail}</p>
+        <p>Password: ${savedPassword}</p>
+        <p>Age: ${savedAge}</p>
+        <p>Comment: ${savedComment}</p>
+        <p>Accepted Terms: ${savedCheck === "true" ? "Yes" : "No"}</p>
+      `;
+    } else {
+      saveData.innerHTML = "<p>No data saved yet.</p>";
+    }
+  }
+}
+
+window.onload = showSavedData; 
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<form class="regForm">
+
+    <div class="container">
+        <header>
+    <h1>Welcome to Web Form</h1>
+    <p>Welcome to my webpage</p>
+</header>
+        <h3>Registration Form</h3>
+
+
+        <div class="nameFeild">
+            <label>Name</label>
+          <input type="text" id="name" class="name">
+            <small class="error"></small>
+        </div>
+
+     
+        <div class="emailField">
+            <label>Email</label>
+    <input type="text" id="email" class="email">
+            <small class="error"></small>
+        </div>
+
+        
+        <div class="passwordFeild">
+            <label>Password</label>
+            <input type="password" id="password" class="password">
+            <small class="error"></small>
+        </div>
+
+      <div class="row">
+        <div class="ageFeild">
+            <label>Age</label>
+            <input type="number" id="age" class="age" >
+            <small class="error"></small>
+        </div>
+
+        <div class="gender">
+            <label>Gender</label><br>
+            <input type="radio" name="gender"  > Male
+            <input type="radio" name="gender" > Female
+            <small class="error"></small>
+        </div>
+    </div>
+
+
+        <div class="containerMessageText">
+            <label>Message</label><br>
+            <textarea rows="2" class="commentMassage" ></textarea>
+            <small class="error"></small>
+        </div>
+
+   
+        <div class="containerCheckBox">
+            <input type="checkbox" class="checkboxCheck" >
+            <label>I accept terms & conditions</label>
+            <small class="error"></small>
+        </div>
+
+      
+        <div class="btns">
+            <button class="submit" type="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+            
+        </div>
+<div class="displayDiv">
+  <button type="button" class="displayBtn" onclick="goToDisplay()">Display Page</button>
+</div>
+
+       
+
+    </div>
+
+</form>
+
+<script src="main2.js"></script>
+
+</body>
+</html>
