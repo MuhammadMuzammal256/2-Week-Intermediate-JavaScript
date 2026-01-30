@@ -59,7 +59,9 @@
       let savedCheck = localStorage.getItem("Check");
 
       if (saveData) {
-        saveData.innerHTML = `
+        if(savedName && savedEmail && savedPassword && savedAge && savedComment && savedCheck){
+
+   saveData.innerHTML = `
             <h2>My Saved Data</h2>
             <p>Name: ${savedName}</p>
             <p>Email: ${savedEmail}</p>
@@ -68,9 +70,12 @@
             <p>Comment: ${savedComment}</p>
             <p>Accepted Terms: ${savedCheck}</p>
           `;
-      } else {
+          
+        }else {
         saveData.innerHTML = "<p>No data saved yet.</p>";
       }
+     
+      } 
     }
 
     showSavedData();
