@@ -41,6 +41,9 @@ document.querySelector(".regForm").addEventListener("submit", function (e) {
   if (myAge.value.trim() === "") {
     showError(myAge, "Require Age");
     isValid = false;
+  }else if(myAge.value <0){
+     showError(myAge, "Please Enter Positive Number");
+
   }
 
   if (myCommentMassage.value.trim() === "") {
